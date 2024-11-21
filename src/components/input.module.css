@@ -1,0 +1,44 @@
+.input {
+    width: 90%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 55px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+    outline: none;
+    height: 60px;
+    border-radius: 14px;
+}
+
+.input:focus {
+    border-color: #fcde70;
+    box-shadow: 0 0 5px rgba(252, 222, 112, 0.6);
+}
+
+.input:hover {
+    border-color: #bbb;
+}
+
+.inputAndSubmit {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 800px;
+    position: relative;
+}
+
+@media screen and (max-width: 767px) {
+    .inputAndSubmit {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        max-width: 800px;
+        position: relative;
+    }
+}
