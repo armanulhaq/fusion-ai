@@ -3,6 +3,7 @@ import "./App.css";
 import Welcome from "./components/Welcome";
 import Input from "./components/Input";
 import Response from "./components/Response";
+import Navbar from "./components/Navbar";
 
 function App() {
     function handleSubmit() {
@@ -14,6 +15,10 @@ function App() {
     const [submittedQuery, setSubmittedQuery] = useState("");
     return (
         <>
+            <div className="navbar">
+                <Navbar />
+            </div>
+
             <div className="top">
                 {submittedQuery === "" ? (
                     <Welcome />

@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    font-size: 30px;
+    font-weight: 800;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.contactContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.contact {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+.iconLink {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+    display: inline-flex; /* Align icon inline */
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        display: flex;
+        width: 100vw;
+        font-size: 23px;
+        font-weight: 700;
+        align-items: center;
+        padding: 0px 10px;
+    }
+    .contactContainer {
+        display: flex;
+        gap: 10px;
+    }
+
+    .contact {
+        display: flex;
+        gap: 2px;
+        align-items: center;
+        font-size: 8px;
+        font-weight: lighter;
+    }
+}

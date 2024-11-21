@@ -45,7 +45,12 @@ const Response = ({ query }) => {
         <>
             <div className={styles.responseContainer}>
                 <div className={styles.actualResponseContainer}>
-                    {loading && <p className={styles.response}>Thinking...</p>}
+                    {loading && (
+                        <p className={styles.loading}>
+                            Hang tight! <br /> We are negotiating with the
+                            server gods.
+                        </p>
+                    )}
                     {error && <p>{error}</p>}
                     {response && (
                         <ReactMarkdown className={styles.response}>

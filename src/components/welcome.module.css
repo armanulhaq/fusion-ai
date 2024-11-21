@@ -13,5 +13,7 @@
         font-size: 30px;
         font-weight: 400;
         align-items: center;
+        justify-content: center;
+        padding: 20px;
     }
 }
