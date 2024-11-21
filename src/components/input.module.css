@@ -1,15 +1,29 @@
+.inputAndSubmit {
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.textareaContainer {
+    position: relative;
+    width: 100%;
+}
+
 .input {
-    width: 90%;
-    padding: 12px 20px;
+    width: 100%;
+    padding: 12px 50px 12px 20px;
     border: 1px solid #ccc;
-    border-radius: 55px;
+    border-radius: 14px;
     font-size: 16px;
     background-color: #fff;
     color: #333;
-    transition: all 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
     outline: none;
-    height: 60px;
-    border-radius: 14px;
+    resize: none;
+
+    position: absolute;
+    bottom: 0;
 }
 
 .input:focus {
@@ -17,28 +31,18 @@
     box-shadow: 0 0 5px rgba(252, 222, 112, 0.6);
 }
 
-.input:hover {
-    border-color: #bbb;
-}
-
-.inputAndSubmit {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    max-width: 800px;
-    position: relative;
+.sendIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-140%);
+    cursor: pointer;
+    background-color: white;
 }
 
 @media screen and (max-width: 767px) {
     .inputAndSubmit {
         width: 90%;
-        display: flex;
         justify-content: center;
-        align-items: center;
-        gap: 10px;
-        max-width: 800px;
-        position: relative;
     }
 }
