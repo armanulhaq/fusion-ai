@@ -15,7 +15,11 @@ function App() {
     return (
         <>
             <div className="top">
-                {submittedQuery === "" ? <Welcome /> : <Response />}
+                {submittedQuery === "" ? (
+                    <Welcome />
+                ) : (
+                    <Response query={submittedQuery} />
+                )}
             </div>
             <div className="bottom">
                 <Input

@@ -1,0 +1,83 @@
+.actualResponseContainer {
+    width: 100%;
+    align-items: flex-start; /* Align items at the start */
+    display: flex;
+    justify-content: center;
+    transition: width 0.3s ease;
+    max-height: 90vh; /* Set maximum height for the container */
+    padding: 20px; /* Add padding at the top */
+    padding-bottom: 20px;
+    max-height: 80vh;
+    padding: 10px;
+    border-radius: 15px;
+    height: calc(90vh - 120px); /* Account for input height and padding */
+    overflow: hidden; /* Prevent double scrollbars */
+}
+
+.menuToggleContainer {
+    width: 100vw;
+    height: 10vh;
+    padding: 20px;
+}
+.menuToggle {
+    width: 40px;
+    border: none;
+}
+
+.response {
+    display: block;
+    border-radius: 14px;
+    padding: 50px;
+    overflow-y: auto; /* Allow vertical scrolling */
+    width: 90%; /* Adjust response width */
+    margin: 0;
+    border-radius: 14px;
+    padding: 50px;
+    max-width: 900px; /* More reasonable max-width */
+    min-height: min-content;
+    max-height: calc(80vh - 20px); /* Account for container padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 767px) {
+    .response {
+        width: 95%;
+        padding: 15px;
+        max-height: calc(90vh - 20px);
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+    }
+
+    .actualResponseContainer {
+        width: 100%;
+        align-items: flex-start; /* Align items at the start */
+        display: flex;
+        justify-content: center;
+        transition: width 0.3s ease;
+        max-height: 90vh; /* Set maximum height for the container */
+        padding: 10px;
+        border-radius: 15px;
+        height: auto;
+        max-height: 90vh;
+    }
+
+    .menuToggleContainer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        z-index: 1000;
+    }
+    .menuToggleContainer {
+        display: none;
+    }
+    .actualResponseContainer {
+        min-width: 50vw;
+    }
+    .normalWidth {
+        width: 100vw; /* Full width when sidebar is collapsed */
+        height: 90vh; /* Set height for full width */
+    }
+}
