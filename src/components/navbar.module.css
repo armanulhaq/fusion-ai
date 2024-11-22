@@ -30,6 +30,7 @@
 @media screen and (max-width: 767px) {
     .navbar {
         display: flex;
+        height: 10dvh;
         width: 100vw;
         font-size: 23px;
         font-weight: 700;
